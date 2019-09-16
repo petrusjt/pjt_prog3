@@ -1,8 +1,0 @@
-#lang racket
-
-(define (reply s)
-  (if (and (string? s) (equals? (substring s 0 5) "hello"))
-      "Hi."
-      "Heh??"
-      )
-  )
