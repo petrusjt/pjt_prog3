@@ -33,3 +33,21 @@
                   )])
   (collatz3 23 1)
   )
+(define (col a l) (let collatz4 ((a a)(l l))
+              (cond
+                [(= a 1) l]
+                [(= (modulo a 2) 0) (collatz4 (/ a 2) (+ l 1))]
+                [(= (modulo a 2) 1) (collatz4 (+ (* a 3) 1) (+ l 1))]
+                )
+  
+  ))
+
+
+
+
+
+
+
+
+
+
