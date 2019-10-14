@@ -7,7 +7,7 @@
     [else (append (list (car lst)) (myremove v (cdr lst)))]
     )
   )
-
+;összes előfordulást törli
 (define (myremove2 v lst)
   (cond
     [(null? lst) (append null null)]
