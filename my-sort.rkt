@@ -1,15 +1,15 @@
 #lang racket
 (define (my-sort lst)
   (define (list-min lst)
-  (define (find-min lst min)
-    (cond
-      [(null? lst) min]
-      [else (if (< (car lst) min)
-                (find-min (cdr lst) (car lst))
-                (find-min (cdr lst) min)
-                )]
+    (define (find-min lst min)
+      (cond
+        [(null? lst) min]
+        [else (if (< (car lst) min)
+                  (find-min (cdr lst) (car lst))
+                  (find-min (cdr lst) min)
+                  )]
+        )
       )
-    )
     (find-min lst (car lst))
   )
   (define sorted '())
