@@ -19,7 +19,13 @@
 (list->hash (list '(2 3) '(3 1) '(3 6) '(6 1) '(1 5) '(1 4) '(9 5) '(4 7) '( 4 8) '(8 7) '( 6 9)))
 
 (define (bejar ht num_of_nodes)
-  (define set_visited (make-hash))
+  (define set (make-hash))
+  (define stack '())
+  (define (bejar-belso ht num_of_nodes)
+    1
+    )
   
-  1
+  (bejar-belso ht num_of_nodes)
   )
+
+(bejar (list->hash (list '(2 3) '(3 1) '(3 6) '(6 1) '(1 5) '(1 4) '(9 5) '(4 7) '( 4 8) '(8 7) '( 6 9))) 9)
