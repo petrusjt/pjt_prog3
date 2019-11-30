@@ -12,7 +12,7 @@
     )
     (osztoi 1)
 )
-
+;TODO: Write a wrapper and make it tail recursive
 (define (sum-list lst)
     (cond
     [(null? lst) 0]
